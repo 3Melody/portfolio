@@ -1,127 +1,254 @@
-.page-heignt {
-    height: 100vh;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar-showing{
     display: none;
 }
 
-.show-bar{
-    display: none;
+.about-res{
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
 }
 
 .corsor{
     cursor: pointer;
 }
 
-.message-res-padding{
-    padding: 100px;
-}
-
-
-
-
- .box-res{
-        width: 50px;
-        height: 50px;
-    }
-
-.nav-res:hover{
-    cursor: pointer;
-    color: rgb(255, 128, 0);
-}
-
-@media  screen and (max-width: 767px) {
-    .profile-about-res{
-        width: 100px;
-    }
-
+.navshow{
+    color: white;
     
+}
 
-    .nav-res{
+.contact-res input{
+    width: 300px;
+}
+
+.contact-res{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-res h1{
+    text-align: center;
+}
+
+.contact-res p{
+    text-align: center;
+}
+
+.box{
+    background-color: rgb(45, 45, 45);
+    padding: 10px;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    color: white;
+}
+
+.icon{
+    font-size: 30px;
+}
+
+
+nav a:hover{
+    color: rgb(255, 175, 3);
+}
+
+.nav-res{
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .show-bar{
         display: none;
     }
 
+    .home-res .profile{
+        width: 300px;
+        height: 300px;
+    }
 
-    .show-bar{
+    .home-res h1{
+        font-size: 50px;
+    }
+
+    .home-res p{
+        font-size: 20px;
+    }
+
+    .icon{
+        font-size:50px ;
+    }
+
+
+    .nav-res{
         display: block;
     }
 
-
-    .service-height{
-        height: 200vh;
+    .about-res img{
+        width: 250px;
     }
-   
+
+    .about-res h1{
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .about-res p{
+        font-size: 20px;
+        text-align: center;
+
+    }
+
+    .about-res h5{
+        font-size: 25px;
+    }
+
+    .service-res h1{
+        font-size: 50px;
+    }
+
+    .service-res p{
+        font-size: 20px;
+    }
+
+    .service-res h5{
+        font-size: 25px;
+    }
+
+    .box{
+        width: 200px;
+        height: 200px;
+    }
+
+    .contact-res h1{
+        font-size: 50px; 
+    }
+
+    .contact-res p{
+        font-size: 20px;
+    }
+
+    .contact-res input{
+        width: 500px;
+    }
+
 }
 
 
+@media screen and (min-width: 1200px) {
+    .show-bar{
+        display: none;
+    }
 
-
-@media screen and (max-width: 1024px) {
-    .profile-about-res{
+    .home-res .profile{
         width: 200px;
+        height: 200px;
     }
 
-    .message-res-padding{
-        padding: 0;
+    .home-res h1{
+        font-size: 50px;
     }
+
+    .home-res p{
+        font-size: 20px;
+    }
+
+    .icon{
+        font-size:50px ;
+    }
+
+
+    .nav-res{
+        display: block;
+    }
+
+    .about-res img{
+        width: 250px;
+    }
+
+    .about-res h1{
+        font-size: 50px;
+        text-align: start;
+    }
+
    
-    
-}
-@media screen and (max-width: 1200px) {
-    .profile-about-res{
-        width: 200px;
-        margin-bottom: 40px;
+
+    .about-res p{
+        font-size: 20px;
+        text-align: start;
     }
-
-    .message-res-padding{
-        margin: 100px 0;
-    }
-
-    
-
-    
-
-    
 
     .about-res{
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        
+        flex-direction: row;
     }
 
-    .message-res{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-    }
- 
    
-    
-}
-@media screen and (max-width: 1400px) {
-    .profile-about-res{
-        width: 300px;
+
+    .about-res h5{
+        font-size: 25px;
     }
 
-  
-    
-}
-
-@media screen and (min-width: 1400px) {
-    .box-res{
-        width: 500px;
-        height: 300px;
-    }
-    
-}
-
-
-    .about-res-margin{
-        margin: 100px 0;
+    .service-res h1{
+        font-size: 50px;
     }
 
+    .service-res p{
+        font-size: 20px;
+    }
 
+    .service-res h5{
+        font-size: 25px;
+    }
 
+    .box{
+        width: 200px;
+        height: 200px;
+    }
+
+    .contact-res h1{
+        font-size: 50px; 
+    }
+
+    .contact-res p{
+        font-size: 20px;
+    }
+
+    .contact-res input{
+        width: 600px;
+    }
+
+    .contact-res{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .contact-res h1{
+        text-align: start;
+    }
+    
+    .contact-res p{
+        text-align: start;
+    }
+
+    .contact-margin{
+        margin-right:30px ;
+    }
+
+}
