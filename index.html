@@ -6,10 +6,17 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
 
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </head>
 <body>
@@ -21,12 +28,14 @@
                     <div>
                         <img src="image/high-logo-one-jpeg.jpg" width="40px" alt="logo">
                     </div>
-                    <div class="d-flex gap-5 ">
+                    <div class="d-flex gap-5  ">
                         <a href="#home"><h5 class="nav-res" >Home</h5></a>
                         <a href="#about"><h5 class="nav-res" >About</h5></a>
                        <a href="#service"> <h5 class="nav-res" >Service</h5></a>
+                       <a href="#projects"> <h5 class="nav-res" >Projects</h5></a>
+                        <a href="#photo"><h5 class="nav-res" >Photo</h5></a>
                         <a href="#contact"><h5 class="nav-res" >Contact</h5></a>
-                        <img src="image/bars-solid.svg" class="show-bar  " alt="" id="navbar" width="20px" style="cursor: pointer;">
+                        <div class="position-relative showbar-nav" ><img src="image/bars-solid.svg" class="show-bar " alt="" id="navbar" width="20px" ></div>
                     </div>
                 </div>
                 <div class="navbar-showing" >
@@ -37,6 +46,8 @@
                             <a href="#home"><div class="mb-3 corsor text-light ">Home</div></a>
                             <a href="#about"><div class="mb-3 corsor text-light">About</div></a>
                             <a href="#service"><div class="mb-3 corsor text-light">Service</div></a>
+                            <a href="#projects"><div class="mb-3 corsor text-light">Projects</div></a>
+                            <a href="#photo"><div class="mb-3 corsor text-light">Photo</div></a>
                             <a href="#contact"><div class="corsor text-light">Contact</div></a>
                         </div>
                     </div>
@@ -47,12 +58,12 @@
             <section id="home" >
                 <div class="bg-black position-relative home-res"  style="height: 100vh ; width:100%;" >
                     <img class="opacity-25"  width="100%" height="100%"  src="image/background.png" style="object-fit: cover; height: 100vh;" alt="">
-                    <div class="position-absolute top-50 start-50 translate-middle text-center">
-                        <img  src="image/profile.jpg" width="180px" height="180px" class="rounded-circle object-fit-cover border rounded profile" alt="">
-                        <h1 class="text-warning fw-bold mt-5">Jessadaporn Tatin</h1>
+                    <div  class="position-absolute top-50 start-50 translate-middle text-center">
+                        <img data-aos="zoom-in"  src="image/profile.jpg" width="180px" height="180px" class="rounded-circle object-fit-cover border rounded profile" alt="">
+                        <h1  class="text-warning fw-bold mt-5">Jessadaporn Tatin</h1>
                         <h4 style="color: azure;" class="mt-3 ">Frontend Developer</h4>
-                       <div class="d-flex gap-5 justify-content-center mt-5  ">
-                         <a href="https://www.facebook.com/mni.plug/"><i class="fa-brands fa-facebook icon"  style="color: #ffffff;"></i></a>
+                       <div  class="d-flex gap-5 justify-content-center mt-5  ">
+                         <a href="https://www.facebook.com/mni.plug/"><i  class="fa-brands fa-facebook icon"  style="color: #ffffff;"></i></a>
                          <i class="fa-brands fa-linkedin icon" style="color: #ffffff; "></i>
                          <i class="fa-brands fa-github icon" style="color: #ffffff; "></i>
                          <i class="fa-brands fa-instagram icon" style="color: #ffffff; "></i>
@@ -62,9 +73,9 @@
                 </div>
             </section>
             <section id="about">
-                <div class="d-flex align-items-center p-3 about-res ">
-                    <img src="image/profile.jpg" class="mb-3" width="150px" alt="">
-                    <div class="d-flex flex-column about-margin">
+                <div class="d-flex align-items-center p-3  about-res ">
+                    <img data-aos="zoom-in-right" src="image/profile.jpg" class="mb-3" width="150px" alt="">
+                    <div data-aos="zoom-in-right" class="d-flex flex-column about-margin">
                         <h1 class="fw-bold text-warning mb-3 "  >ABOUT ME</h1>
                         <p >I'm a second-year Software Engineering student at
                             University of Phayao,looking for an internship opportunity
@@ -83,11 +94,11 @@
                 </div>
             </section>
   
-            <section id="service" class="bg-black text-light p-3 ">
+            <section  id="service" class="bg-black text-light p-3 ">
                 <div class="d-flex flex-column align-items-center service-res">
-                    <h1 class="fw-bold text-warning ">MY SERVICES</h1>
-                    <p class="my-5" style="text-align: center;">HTML/CSS Development: Showcase proficiency in writing clean, semantic HTML markup and CSS stylesheets to create visually appealing and well-structured web pages.</p>
-                    <div class="d-flex flex-wrap justify-content-center  gap-3 ">
+                    <h1 data-aos="zoom-out-up"  class="fw-bold text-warning ">MY SERVICES</h1>
+                    <p data-aos="zoom-out-up"  class="my-5" style="text-align: center;">HTML/CSS Development: Showcase proficiency in writing clean, semantic HTML markup and CSS stylesheets to create visually appealing and well-structured web pages.</p>
+                    <div data-aos="zoom-out-up"  class="d-flex flex-wrap justify-content-center  gap-3 ">
                      
                         
                          <div class="box d-flex flex-column align-items-center justify-content-center " style="text-align: center;"><img width="30px" src="image/mobile-solid.svg" alt="">
@@ -100,8 +111,69 @@
                     </div>
                 </div>
             </section>
-            <section id="contact" style="margin-top: 150px;" class="p-3">
-                <div class="d-flex  align-items-center contact-res">
+
+            <section style="margin-top: 150px;" id="projects">
+                <div>
+                    <h1 data-aos="zoom-in" class="fw-bold text-warning text-center my-4">PROJECTS</h1>
+                    <div class="d-flex row-cols-3 justify-content-center  row gap-5 ">
+                        <div data-aos="flip-left" class="card"  style="width: 18rem;">
+                            <img  width="100%" height="200vh" style="object-fit: cover;"  src="image/project1.png" class="card-img-top projectimg" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">UP POP</h5>
+                              <p class="card-text">Website for publicizing news of the University of Phayao There is a system for sending and receiving CRUD data to display on the home page.</p>
+                              <a href="https://github.com/3Melody/UPPOP_VUE.git" class="btn btn-primary">GitHub</a>
+                            </div>
+                          </div>
+                          <div data-aos="flip-right"  class="card" style="width: 18rem;">
+                            <img width="100%" height="200vh" style="object-fit: cover;"   src="image/project2.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">B Cinema</h5>
+                              <p class="card-text">Website for booking movie tickets There is a CRUD data transmission system to display on the home page. and real-time seat reservations</p>
+                              <a href="https://github.com/3Melody/UPPOP_VUE.git" class="btn btn-primary">GitHub</a>
+                            </div>
+                          </div>
+                          <div data-aos="flip-left" class="card" style="width: 18rem;">
+                            <img width="100%" height="200vh" style="object-fit: cover;" src="image/project3.PNG" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">MOMO Paradise</h5>
+                              <p class="card-text">Clone website with complete responsiveness
+                                The tool uses HTML SASS JS, with most of the writing being a complete rewrite.</p>
+                              <a href="https://github.com/3Melody/MOMO-Clone.git" class="btn btn-primary">GitHub</a>
+                              <a href="https://my-momo-clone.onrender.com/" class="btn btn-success ">Live Demo</a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section style="margin-top: 150px;"  id="photo" class="bg-black ">
+                <!-- Slider main container -->
+<div class="swiper" data-aos="zoom-in" style="height: 100vh;">
+    <!-- Additional required wrapper -->
+    <h1 class="fw-bold text-warning my-4" style="text-align: center;">MY PHOTO</h1>
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img class="slide-image"  src="image/background.png" width="100%" height="100%" alt=""></div>
+      <div class="swiper-slide"><img class="slide-image" src="image/photo2.jpg" width="100%" height="100%"alt=""></div>
+      <div class="swiper-slide"><img class="slide-image" src="image/photo3.jpg" width="100%" height="100%" alt=""></div>
+      ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+  
+            </section>
+            <section id="contact" style="margin-top: 100px;"  class="p-3">
+                <div data-aos="fade-up"
+                data-aos-duration="3000" class="d-flex  align-items-center contact-res">
                     <div class="contact-margin">
                         <h1 class="fw-bold text-warning">
                             MESSAGE
@@ -128,8 +200,10 @@
                                 </div>
                                 <div class="input-group">
                                  <textarea class="form-control" placeholder ="Message" aria-label="With textarea" rows="4"></textarea>
+                                 <button type="submit" class="btn btn-warning mt-3 text-light w-100 ">Submit</button>
+                                 
                                </div>
-                               <button type="submit" class="btn btn-warning mt-3 text-light w-100 ">Submit</button>
+                               
                             </form> 
                          </div>
                     </div>
@@ -139,6 +213,11 @@
         </div>
        
     </div>
+
+    <script>
+        AOS.init();
+      </script>
+      
     
     <script src="script.js"></script>
 </body>
